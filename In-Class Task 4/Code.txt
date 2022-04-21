@@ -1,0 +1,25 @@
+CREATE DATABASE IF NOT EXISTS orders;
+USE orders;
+
+CREATE TABLE IF NOT EXISTS products (
+	product_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+	description MEDIUMTEXT NOT NULL,
+	price SMALLINT UNSIGNED NOT NULL,
+	quantity SMALLINT,
+	PRIMARY KEY(product_id)
+);
+
+SELECT product_id, price
+	FROM products
+	WHERE price > 50;
+
+SELECT product_id, quantity
+	FROM products
+	WHERE quantity < 4;
+
+SELECT *
+	FROM products
+	ORDER BY description ASC;
+
+SELECT product_id, price*quantity
+	FROM products
