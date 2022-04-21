@@ -1,0 +1,31 @@
+button {
+	background-color: gray;
+	color: white;
+	border-radius: 12px;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 8px 16px;
+}
+
+button:hover {
+	background-color: black;
+}
+
+form {
+	border-radius: 4px;
+	border-style: solid;
+}
+
+form div {
+	margin: 8px auto;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+}
+
+input, select {
+	display: inline-block;
+	width: 150px;
+}
